@@ -10,7 +10,7 @@ const app = express()
 var privateKey  = fs.readFileSync('./path/to/private.pem', 'utf8');
 var certificate = fs.readFileSync('./path/to/file.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
-
+var a 
 expressWs(app);
 
 var httpsServer = https.createServer(credentials, app)
